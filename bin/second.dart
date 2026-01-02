@@ -1,14 +1,30 @@
 void main(){
-  print("Hello world from second");
-  int a = 1;
-  String b = "Pramesh";
-  double c = 1.1;
-  bool d = True;
-  final String e = "HSA";
-  final int f = 1;
-  const pie = 3.14;
-  var g = 1;
-  var h = "abcdef"; 
-   
+  print ("hello P");
+  normal();
+  parameterized(3);
+  print (returned());
 }
 
+void normal(){
+  print ("normal");
+}
+
+void parameterized(int day){
+  switch (day){
+    case 1:
+    print ("Sunday");
+    break;
+    case 2:
+    print ("Monday");
+    break;
+    case 3:
+    print ("Invalid");
+    break;
+  }
+}
+
+int returned(){
+  int a = 1;
+  int b = 2;
+  return a + b;
+}
